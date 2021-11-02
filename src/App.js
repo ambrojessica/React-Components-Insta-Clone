@@ -12,6 +12,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Posts from '../src/components/Posts/Posts';
 import dummyData from './dummy-data';
+import Searchbar from '../src/components/SearchBar/SearchBar';
 
 const App = () => {
   // Create a state called `posts` to hold the array of post objects, **initializing to dummyData**.
@@ -40,9 +41,9 @@ const App = () => {
 
   return (
     <div className='App'>
-      {/* Add SearchBar and Posts here to render them */ 
+      {/* Add SearchBar and Posts here to render them */  }
+      <Searchbar />
       <Posts posts={posts} likePost={likePost} />
-      }
       {/* Check the implementation of each component, to see what props they require, if any! */}
     </div>
   );
